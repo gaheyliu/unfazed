@@ -110,25 +110,32 @@ header{
 header nav{
      width: 100%;
      display: flex;
-     justify-content: flex-end;
-
 }
 
-header ul{
-     width: 40%;
+.navTags ul{
+     width: 100%;
      display: flex;
      flex-direction: row;
      justify-content: space-between;
+
 }
 
-header li{
+/* header li{
      display: flex;
      justify-content: space-around;
      padding: 0 5px 0 5px;
+} */
+
+.navTags{
+     width: 50%;
+     display: flex;
+     justify-content: space-between;
 }
 
-header nav div{
+.socials ul{
      display: flex;
+     width: 20%;
+     padding-inline: 5px;
 }
 
 a {
@@ -158,7 +165,6 @@ a {
      display: flex;
      flex-direction: column;
      justify-content: center;
-     margin-inline: 5%;
 }
 
 .topsection h1{
@@ -181,6 +187,48 @@ a {
      justify-content: center;
      font-family: 'Yellowtail', cursive;
      color: #f733a1;
+}
+
+
+
+/******************************************
+/* newReleases
+/*******************************************/
+
+.newReleases{
+     height: 150vh;
+     width: 100%;
+     background-image: url(../img/newReleases.JPG);
+     background-size: cover;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     margin-block: 5%;
+
+}
+
+.newReleases img{
+     max-width: 350px;
+     max-height: 350px;
+     margin: 10% 0 5% 0;
+
+}
+
+.newReleases h3{
+     font-family: 'Roboto Slab', serif;
+     font-size: 5rem;
+     color: #e4d728;
+     margin-bottom: 2%;
+     -webkit-text-stroke: 0.5px black;
+     font-weight: 700;
+}
+
+.newReleases ul{
+     font-size: 2rem;
+}
+
+.newReleases li{
+     margin-inline: 10%;
 }
 
 /******************************************
@@ -281,55 +329,192 @@ a {
 
 .shows{
      height: 100vh;
-     display: block;
+     display: flex;
      width: 100%;
+     background-color: #170c15;
+     margin-block: 5%;
+     flex-direction: column;
+     
 }
 
-.shows h2{
+/* .shows h2{
      width: 100%;
      display: flex;
      justify-content: center;
-}
+     color: #f733a1;
+     padding-top: 10%;
+     font-family: 'Roboto Slab', serif;
+     -webkit-text-stroke: 0.5px black;
+     font-weight: 700;
+} */
 
 .split{
      width: 100%;
      display: flex;
      margin: 5% 0 5% 0;
+     justify-content: space-evenly;
 }
-
+/* 
 .split div{
      display: flex;
      flex-direction: column;
      height: 30vh;
      width: 35vw;
-     border: black 1px solid;
-     background-image: url(../img/unfazed.JPG);
-     background-size: cover;
-     background-position: 20%;
-}
+} */
 
 .split div h3, .split div p{
      width: 100%;
      display: flex;
      flex-direction: column;
-     justify-content: center;
+     align-items: center;
+     font-family: 'Roboto Slab', serif;
+     -webkit-text-stroke: 0.5px black;
+     font-weight: 400;
+     padding-top: 2%;
 }
 
-.split .showLeft{
-     margin: 0 5% 0 10%;
+.split h3{
+     font-size: 1.5em;
+     color: #f733a1;
 }
 
-.split .showRight{
-     margin:0% 10% 0 5%;
+.split p{
+     color: #e4d728;
+}
+
+.eventVenue1, .eventVenue2{
+     width: 30vw;
+     height: 30vh;
+     border: #170c15 1px solid;
+}
+
+.eventVenue1{
+     background-image: url(../img/sasktel.jpeg);
+     background-size: cover;
+}
+
+.eventVenue2{
+     background-image: url(../img/scotiacentre.jpeg);
+     background-size: cover;
 }
 
 
-/******************************************
-/* newReleases
-/*******************************************/
 
+/* .shows img{
+     max-width: 100%;
+     max-height: 100%;
+} */
 
+.button {
+     padding: 1rem 8rem 0 0;
+}
 
 /******************************************
 /* ADDITIONAL STYLES
 /*******************************************/
+
+/* From cssbuttons.io */
+.fancy {
+     background-color: transparent;
+     border: 2px solid #f733a1;
+     border-radius: 0;
+     box-sizing: border-box;
+     color: #fff;
+     cursor: pointer;
+     display: inline-block;
+     float: right;
+     font-weight: 700;
+     letter-spacing: 0.05em;
+     margin: 0;
+     outline: none;
+     overflow: visible;
+     padding: 1.25em 2em;
+     position: relative;
+     text-align: center;
+     text-decoration: none;
+     text-transform: none;
+     transition: all 0.3s ease-in-out;
+     user-select: none;
+     font-size: 13px;
+    }
+    
+    .fancy::before {
+     content: " ";
+     width: 1.5625rem;
+     height: 2px;
+     background: #f733a1;
+     top: 50%;
+     left: 1.5em;
+     position: absolute;
+     transform: translateY(-50%);
+     transform-origin: center;
+     transition: background 0.3s linear, width 0.3s linear;
+    }
+    
+    .fancy .text {
+     font-size: 1.125em;
+     line-height: 1.33333em;
+     padding-left: 2em;
+     display: block;
+     text-align: left;
+     transition: all 0.3s ease-in-out;
+     text-transform: uppercase;
+     text-decoration: none;
+     color: #f733a1;
+    }
+    
+    .fancy .top-key {
+     height: 2px;
+     width: 1.5625rem;
+     top: -2px;
+     left: 0.625rem;
+     position: absolute;
+     background: black;
+     transition: width 0.5s ease-out, left 0.3s ease-out;
+    }
+    
+    .fancy .bottom-key-1 {
+     height: 2px;
+     width: 1.5625rem;
+     right: 1.875rem;
+     bottom: -2px;
+     position: absolute;
+     background: black;
+     transition: width 0.5s ease-out, right 0.3s ease-out;
+    }
+    
+    .fancy .bottom-key-2 {
+     height: 2px;
+     width: 0.625rem;
+     right: 0.625rem;
+     bottom: -2px;
+     position: absolute;
+     background: black;
+     transition: width 0.5s ease-out, right 0.3s ease-out;
+    }
+    
+    .fancy:hover {
+     color: #e4d728;
+     background: #f733a1;
+    }
+    
+    .fancy:hover::before {
+     width: 0.9375rem;
+     background: black;
+    }
+    
+    .fancy:hover .text {
+     color: black;
+     padding-left: 1.5em;
+    }
+    
+    .fancy:hover .top-key {
+     left: -2px;
+     width: 0px;
+    }
+    
+    .fancy:hover .bottom-key-1,
+     .fancy:hover .bottom-key-2 {
+     right: 0;
+     width: 0;
+    }
