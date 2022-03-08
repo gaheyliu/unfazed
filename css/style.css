@@ -102,40 +102,47 @@ header{
      justify-content: flex-end;
      font-size: var(--fs-neutral-700);
      /* background-image: url(../img/statics.jpeg); */
-     padding-inline: 5%;
-     height: 8vh;
+     height: 6h;
      background-color: #170c15;
 }
 
 header nav{
      width: 100%;
      display: flex;
+     justify-content: flex-start;
+     margin-block: 1%;
 }
 
 .navTags ul{
      width: 100%;
      display: flex;
      flex-direction: row;
-     justify-content: space-between;
-
+     justify-content: flex-start;
 }
 
-/* header li{
+
+
+.navTags li{
      display: flex;
      justify-content: space-around;
-     padding: 0 5px 0 5px;
-} */
+     padding: 0 1% 0 1%;
+}
 
 .navTags{
-     width: 50%;
+     width: 100%;
      display: flex;
      justify-content: space-between;
 }
 
 .socials ul{
      display: flex;
-     width: 20%;
-     padding-inline: 5px;
+     justify-content: flex-end;
+     width: 100%;
+}
+
+.socials li{
+     display: flex;
+     padding-inline: 5%
 }
 
 a {
@@ -196,15 +203,13 @@ a {
 /*******************************************/
 
 .newReleases{
-     height: 150vh;
+     height: 100vh;
      width: 100%;
      background-image: url(../img/newReleases.JPG);
      background-size: cover;
      display: flex;
      flex-direction: column;
      align-items: center;
-     margin-block: 5%;
-
 }
 
 .newReleases img{
@@ -217,19 +222,29 @@ a {
 .newReleases h3{
      font-family: 'Roboto Slab', serif;
      font-size: 5rem;
-     color: #e4d728;
+     color: #f733a1;
      margin-bottom: 2%;
      -webkit-text-stroke: 0.5px black;
      font-weight: 700;
 }
 
-.newReleases ul{
-     font-size: 2rem;
+.platform a{
+     color: #ca477b;
+     font-size: 3rem;
+     -webkit-text-stroke: 1px black;
 }
 
-.newReleases li{
-     margin-inline: 10%;
+.newReleases ul{
+     font-size: 2rem;
+     display: flex;
+     justify-content: center;
 }
+
+.platform a:hover {
+     color: #f733a1; 
+     text-decoration:none; 
+     cursor:pointer;  
+ }
 
 /******************************************
 /* ABOUT US 
@@ -240,20 +255,39 @@ a {
      width: 100%;
 }
 
-.aboutUs > h2 {
+.aboutUsGroup{
+     height: 70vh;
+     width: 100%;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+}
+
+.aboutUsGroup > h2 {
      padding-top: 2%;
 }
 
-.aboutUs > p {
+.aboutUsGroup > p {
      padding-inline: 5%;
      padding-block: 2%;
 }
 
-.aboutUs img{
-     width: 100%;
-     height: 100%;
-     padding: 10px;
+.imgWrap, .info_container{
+     width: 50%;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
 }
+
+.aboutUs img{
+     max-width: 75%;
+     max-height: 75%;
+     /* padding: 10px; */
+}
+
+
 
 /* .info_container{
      display: block;
@@ -268,53 +302,72 @@ a {
 .info_container span{
      font-family: 'Roboto Slab', serif;
      color: var(--clr-primary-900);
-     font-size: 2.5rem;
-     display: flex;
-     /* justify-content: center; */
+     font-size: 3rem;
 }
 
 .info_container > span + span {
-     font-size: 1rem;
+     font-size: 1.25rem;
+}
+
+.info_container p{
+     /* width: 75%; */
+     display: flex;
+     padding-left: 10%;
+     padding-right: 10%;
 }
 
 .bryson, .drew, .tanner{
      display: flex;
 }
 
-.bryson .imgWrap, .tanner .imgWrap{
+.bryson{
+     background-color: #ede0d4;
+     height: 75vh;
+}
+
+.drew{
+     height: 75vh;
+}
+
+.tanner{
+     height: 75vh;
+     background-color: #ede0d4;
+}
+
+/* .bryson .imgWrap, .tanner .imgWrap{
      padding: 0 0 0 2.5%;
 }
 
 .drew .imgWrap{
      padding: 0 5% 0 0;
-} 
-
+}  */
+/* 
 .info_container{
      padding-inline: 2%;
-}
-
+} */
+/* 
 .drew .info_container{
      padding: 0 2% 0 3%;
-}
+} */
 
-.imgWrap{
+/* .imgWrap{
      width: 60%;
-}
+} */
 
-.info_container{
+/* .info_container{
      width: 40%;
      display: flex;
      justify-content: center;
      flex-direction: column;
-}
+} */
 
-.info_container span, 
+/* .info_container span, 
 .info_container p{
      display: flex;
      width: 100%;
      justify-content: center;
      align-items: center;
-}
+} */
 
 
 
@@ -385,25 +438,14 @@ a {
 .eventVenue1, .eventVenue2{
      width: 30vw;
      height: 30vh;
-     border: #170c15 1px solid;
+     display: flex;
+     justify-content: center;
+}
+.shows img{
+     /* max-inline-size: 100%;
+     max-block-size: 1005; */
 }
 
-.eventVenue1{
-     background-image: url(../img/sasktel.jpeg);
-     background-size: cover;
-}
-
-.eventVenue2{
-     background-image: url(../img/scotiacentre.jpeg);
-     background-size: cover;
-}
-
-
-
-/* .shows img{
-     max-width: 100%;
-     max-height: 100%;
-} */
 
 .button {
      padding: 1rem 8rem 0 0;
@@ -413,7 +455,6 @@ a {
 /* ADDITIONAL STYLES
 /*******************************************/
 
-/* From cssbuttons.io */
 .fancy {
      background-color: transparent;
      border: 2px solid #f733a1;
