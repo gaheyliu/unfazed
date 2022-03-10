@@ -556,11 +556,12 @@ iframe{
 /*******************************************/
 
 .shows{
-     height: 100vh;
+     height: 100%;
      display: flex;
      width: 100%;
      background-color: #170c15;
      flex-direction: column;
+     padding: 5% 0;
      
 }
 
@@ -992,7 +993,7 @@ padding-top: 2%;
 /*******************************************/
 
 .contact{
-     height: 80vh;
+     height: 100%;
 }
 
 .contact > h2{
