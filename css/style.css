@@ -20,6 +20,18 @@
 
 
 /******************************************
+/* fonts
+/*******************************************/
+
+@font-face {
+     font-family: 'Noto serif';
+     src: url('../assets/fonts/NotoSerifDisplay-VariableFont_wdth\,wght.ttf') format('woff2'),
+          url('../assets/fonts/NotoSerifDisplay-Italic-VariableFont_wdth\,wght.ttf') format('woff');
+     font-weight: 900;
+     font-style: normal;
+ }
+
+/******************************************
 /* BASE STYLES 
 /*******************************************/
 
@@ -182,16 +194,21 @@ a {
 }
 
 .topsection h1{
-     -webkit-text-stroke: 0.5px black;
      font-weight: 900;
      width: 100%;
      display: flex;
      font-size: 8rem;
      justify-content: center;
-     font-family: 'Permanent Marker', cursive;
-     /* font-family: 'Roboto Slab', serif; */
+     /* font-family: 'Permanent Marker', cursive; */
+     /* font-family: 'Roboto Slab', serif;*/
+     /* font-family: 'Noto serif', serif; */
+     font-family: 'Abril Fatface', cursive;
      color: #c75a5f;
      position: relative;
+     text-align: center;
+     -webkit-text-stroke: 0px black;
+     letter-spacing: 5px;
+
 }
 
 .topsection h3{
@@ -201,9 +218,12 @@ a {
      display: flex;
      width: 100%;
      justify-content: center;
-     font-family: 'Yellowtail', cursive;
+     /* font-family: 'Yellowtail', cursive; */
+     font-family: 'Abril Fatface', cursive;
      color: #c75a5f;
      position: relative;
+     -webkit-text-stroke: 0.2px black;
+     letter-spacing: 5px;
 }
 
 .topsection::before {    
@@ -231,25 +251,48 @@ a {
      background-color: #ede0d4;
      background-size: cover;
      display: flex;
-     flex-direction: column;
-     align-items: center;
+     flex-wrap: wrap;
 }
 
-.newReleases img{
-     max-width: 350px;
-     max-height: 350px;
-     margin: 5% 0 5% 0;
+.single1, .single2{
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     width: 50%;
+     align-items: center;
+     position: relative;
+}
 
+.single1{
+     border-left: #170c15 solid 40px;
+     border-top: #170c15 solid 25px;
+}
+
+
+.single2{
+     border-top: #170c15 solid 25px;;
+     border-left: #170c15 solid 25px;
+     border-right: #170c15 solid 40px;;
+}
+
+
+.newReleases img{
+     max-width: 425px;
+     max-height: 425px;
+     margin: 5% 0 5% 0;
+     position: relative;
+     border: #170c15 0.1px solid;
 }
 
 .newReleases h3{
      font-family: 'Permanent Marker', cursive;
-     font-size: 5rem;
+     font-size: 2rem;
      /* color: #f733a1; */
      color: #c75a5f;
-     margin-bottom: 2%;
+     margin-top: 2%;
      -webkit-text-stroke: 0.5px black;
      font-weight: 700;
+     position: relative;
 }
 
 .platform a{
@@ -257,6 +300,7 @@ a {
      color: #c75a5f;
      font-size: 3rem;
      -webkit-text-stroke: 1px black;
+     position: relative;
 }
 
 .newReleases ul{
@@ -270,6 +314,39 @@ a {
      text-decoration:none; 
      cursor:pointer;  
  }
+
+ .single1::before {    
+     content: "";
+     background-image: url(../img/single2backgroundblur.png);
+     background-size: 1000%;
+     position: absolute;
+     top: 0px;
+     right: 0px;
+     bottom: 0px;
+     left: 0px;
+}
+
+.single2::before {    
+     content: "";
+     background-image: url(../img/stacy.jpeg);
+     background-size: 10000%;
+     position: absolute;
+     top: 0px;
+     right: 0px;
+     bottom: 0px;
+     left: 0px;
+
+}
+
+.single1 h3, .single1 a{
+     color: #2d2e26;
+     -webkit-text-stroke: 0.6px #c75a5f;
+}
+
+iframe{
+     position: relative;
+     margin-top: 5%;
+}
 
 /******************************************
 /* ABOUT US 
