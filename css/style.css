@@ -363,7 +363,7 @@ a {
 
 .single2::before {    
      content: "";
-     background-image: url(../img/stacy.jpeg);
+     background-image: url(../img/stacyBackground.jpeg);
      background-size: 10000%;
      position: absolute;
      top: 0px;
@@ -684,9 +684,9 @@ padding-top: 2%;
 }
 
 .merchDiv p{
-     font-weight: 400;
+     font-weight: 700;
      font-size: 1.5rem;
-     font-family: 'Permanent Marker', cursive;
+     font-family: 'Roboto Slab', serif;
      color: #c75a5f;
      padding-bottom: 1.5%;
 }
