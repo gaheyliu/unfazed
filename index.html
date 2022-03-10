@@ -9,6 +9,8 @@
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400&family=Permanent+Marker&family=Roboto+Slab:wght@400;700;900&family=Syne+Mono&family=Yellowtail&display=swap" rel="stylesheet">
 		
+		<link rel = "icon" href = "img/icon.png" type = "image/x-icon">
+
 		<title>Unfazed | Canadian Midwest Takeover</title>
 
 		<!-- external CSS link -->
@@ -17,22 +19,21 @@
 	</head>
 	<body>
 		<!--header navigation bar-->
-		<header>
+		<header id="home">
 			<nav>
 				<div class="navTags">
 					<ul>
-						<li><a href="#">Home</a></li>
-						<li><a href="#">New Releases</a></li>
-						<li><a href="#">About Us</a></li>
-						<li><a href="#">Upcoming Events</a></li>
-						<li><a href="#">Merch</a></li>
+						<li><a href="#newReleases">New Releases</a></li>
+						<li><a href="#aboutUs">About Us</a></li>
+						<li><a href="#events">Upcoming Events</a></li>
+						<li><a href="#merch">Merch</a></li>
 					</ul>
 				</div>
 				<div class="socials">
 					<ul>					
-						<li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
-						<li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
-						<li><a href="#"><i class="fa-brands fa-youtube"></i></a></li></ul>
+						<li><a href="https://www.instagram.com/unfazedband" target="#"><i class="fa-brands fa-instagram"></i></a></li>
+						<li><a href="https://www.facebook.com/UnfazedBand/" target="#"><i class="fa-brands fa-facebook"></i></a></li>
+						<li><a href="https://www.youtube.com/channel/UCp8eM0Wc9rhoJFTPyzvvVRw" target="#"><i class="fa-brands fa-youtube"></i></a></li></ul>
 				</div>
 			</nav>
 		</header>
@@ -41,24 +42,24 @@
 				<h1 class="heading">UNFAZED</h1>
 				<h3>Canadian Midwest Takeover</h3>
 			</section>
-			<section class="newReleases">
+			<section class="newReleases" id="newReleases">
 				<img src="img/midtown.jpeg" alt="">
 				<h3>MIDTOWN OUT NOW</h3>
 				<div class="socials platform">
 					<ul>					
-						<li><a href="#"><i class="fa-brands fa-spotify"></i></a></li>
-						<li><a href="#"><i class="fa-brands fa-itunes"></i></a></li>
-						<li><a href="#"><i class="fa-brands fa-itunes-note"></i></a></li>
-						<li><a href="#"><i class="fa-brands fa-youtube"></i></a></li></ul>
+						<li><a href="https://open.spotify.com/artist/44P5U3BDY7kLC0ToFFII0N" target="#"><i class="fa-brands fa-spotify"></i></a></li>
+						<li><a href="https://music.apple.com/us/artist/unfazed/1468797388" target="#"><i class="fa-brands fa-itunes"></i></a></li>
+						<li><a href="https://www.youtube.com/channel/UCp8eM0Wc9rhoJFTPyzvvVRw" target="#"><i class="fa-brands fa-youtube"></i></a></li></ul>
 				</div>
 			</section>
-			<section class="aboutUs">
+			<section class="aboutUs"  id="aboutUs">
 				<div class="aboutUsGroup">
 					<h2 class="heading">About Us</h2>
 					<div class="groupPic">
 						<img src="img/merch3.png" alt="">
 					</div>
-					<!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi quod eum dolorem nesciunt itaque impedit officia quam aut doloribus qui? Expedita libero alias sed voluptate consectetur qui sequi magnam quas.</p> -->
+					<p>&emsp; &emsp;Unfazed is an alternative rock trio hailing from Regina, SK Canada.  The in-your-face rhythm sections of bands such as Nirvana and the twinkling emo winged leads of more present day acts like Mom Jeans and Modern Baseball served as influential building blocks for the group, eventually leading to the creation of the Unfazed sound; a specific brand of Post-punk that combines these elements with ease that can be easily recognized as an authentic voice of the Canadian Midwest.</p>
+					<p>Unfazed consists of Tanner Bolianatz on vocals and lead guitar, Bryson Bolianatz on rhythm guitar, and Drew Osborne on drums/percussion.  Years of friendship and brotherhood have allowed each member to seamlessly blend their individual influences into the group, which creates an air of familiar nostalgia for the classic punk rock and grunge acts of the 1990s while s simultaneously providing a fresh and modernized sound that serves as a catalyst for a new generation of alternative rock.</p>
 				</div>
 					<div class="bryson">
 						<div class="imgWrap">
@@ -92,7 +93,7 @@
 					</div>
 				</section>
 			</section>
-			<section class="shows">
+			<section class="shows" id="events">
 				<h2 class="heading">Events</h2>
 				<section class="split">
 					<div class="showLeft">
@@ -129,7 +130,7 @@
 					</div>
 				</section>
 			</section>
-			<section class="merch">
+			<section class="merch" id="merch">
 				<h2 class="heading">Merch</h2>
 				<section class="merch1stRow">
 					<div class="merchDiv">
@@ -225,7 +226,7 @@
 				</section>
 
 			</section>
-			<section class="contact">
+			<section class="contact" id="contact">
 				<h2 class="heading">Contact Us</h2>
 				<form>      
 					<input name="name" type="text" class="feedback-input" placeholder="Name" />   
@@ -238,34 +239,31 @@
 				<div class="social">
 				  <a href="#"><i class="fab fa-instagram"></i></a>
 				  <a href="#"><i class="fa-brands fa-tiktok"></i></a>
-				  <a href="#"><i class="fab fa-twitter"></i></a>
+				  <a href="#"><i class="fa-brands fa-youtube"></i></a>
 				  <a href="#"><i class="fab fa-facebook-f"></i></a>
 				</div>
 		  
 				<ul class="list">
 				  <li>
-					<a href="#">Home</a>
+					<a href="#home">Home</a>
 				  </li>
 				  <li>
-					<a href="#">New Releases</a>
+					<a href="#newReleases">New Releases</a>
 				  </li>
 				  <li>
-					<a href="#">About Us</a>
+					<a href="#aboutUs">About Us</a>
 				  </li>
 				  <li>
-					<a href="#">Upcoming Events</a>
+					<a href="#events">Upcoming Events</a>
 				  </li>
 				  <li>
-					<a href="#">Merch</a>
+					<a href="#merch">Merch</a>
 				  </li>
 				</ul>
 				<div class="copyright">
-					<a href="#">Webscape Development @ 2022</a>
+					<a href="#">Webscape Development &copy; 2022 | All Rights Reserved</a>
 				</div>
 			  </section>
-
-			
-
 		</main>
 
 
