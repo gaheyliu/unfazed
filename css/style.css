@@ -31,6 +31,34 @@
      font-style: normal;
  }
 
+ @font-face {
+     font-family: 'nirvana';
+     src: url('../assets/fonts/Nirvana-Font/NIRVANA.TTF') format('opentype');
+     font-weight: normal;
+     font-style: normal;
+ }
+
+ @font-face {
+     font-family: 'beatles';
+     src: url('../assets/fonts/beatles/BOOTLE__.TTF') format('opentype');
+     font-weight: normal;
+     font-style: normal;
+ }
+
+ @font-face {   /* HTML MUST BE LOWER CASE*/
+     font-family: 'greenday';
+     src: url('../assets/fonts/GreenDay/break-down.ttf') format('opentype');
+     font-weight: normal;
+     font-style: normal;
+ }
+
+ @font-face {
+     font-family: 'slipknot';
+     src: url('../assets/fonts/slipknot/Sickness.ttf') format('opentype');
+     font-weight: normal;
+     font-style: normal;
+ }
+
 /******************************************
 /* BASE STYLES 
 /*******************************************/
@@ -193,6 +221,7 @@ a {
      position: relative;
 }
 
+
 .topsection h1{
      font-weight: 900;
      width: 100%;
@@ -277,8 +306,8 @@ a {
 
 
 .newReleases img{
-     max-width: 425px;
-     max-height: 425px;
+     max-width: 75%;
+     max-height: 75%;
      margin: 5% 0 5% 0;
      position: relative;
      border: #170c15 0.1px solid;
@@ -514,11 +543,44 @@ iframe{
      align-items: center;
 } */
 
+.aboutUsGroup + p + span{
+     display: block;
+}
 
+#greendayFont{
+     font-family: 'greenday', serif;
+     font-size: 2rem;
+     color: #c75a5f;
+     line-height: 2rem;
+     -webkit-text-stroke: 0.5px #170c15;
+}
 
+#beatlesFont{
+     font-family: 'beatles', serif;
+     font-size: 2rem;
+     color: #c75a5f;
+     line-height: 2rem;
+     letter-spacing: 0.05em;
+     -webkit-text-stroke: 0.5px #170c15;
+}
 
+#nirvanaFont{
+     font-family: 'nirvana', serif;
+     color: #fdea0a;
+     font-size: 2.5rem;
+     letter-spacing: 0.05em;
+     line-height: 2rem;
 
+}
 
+#slipknotFont{
+     font-family: 'slipknot', serif;
+     font-size: 2rem;
+     color: #c75a5f;
+     line-height: 2rem;
+     letter-spacing: 0.2em;
+     -webkit-text-stroke: 0.5px #170c15;
+}
 
 
 /******************************************
