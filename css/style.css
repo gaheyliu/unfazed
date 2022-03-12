@@ -550,6 +550,11 @@ iframe{
      padding: 2% 0;
 }
 
+/* .aboutUsThreeDivs .info_container{
+     border: #c75a5f 2px solid;
+     margin: 5%;
+     margin-inline: 25%;
+} */
 
 /******************************************
 /* SHOWS
@@ -617,8 +622,7 @@ iframe{
      justify-content: center;
 }
 .shows img{
-     /* max-inline-size: 100%;
-     max-block-size: 1005; */
+     max-height: 100%;
 }
 
 
@@ -1052,3 +1056,69 @@ textarea {
 /* .merch{
      display: none;
 } */
+
+
+/***************************/
+/********** Media **********/
+/********* Queries *********/
+/***************************/
+
+@media screen and (max-device-width: 480px) { 
+     header {
+          display: none;
+     }
+
+     h1{
+          font-size: 4rem !important; 
+     }
+
+     h3, h2{
+          font-size: 2.5rem !important;
+     }
+
+     p{
+          font-size: 0.85rem !important;
+     }
+
+
+     .topsection, .newReleases{
+          height: 50vh;
+     }
+
+     .aboutUsGroup img{
+          display: none;
+     }
+
+     .aboutUsGroup{
+          position: relative;
+     }
+
+     .aboutUsGroup h2, .aboutUsGroup p{
+          position: relative;
+          font-weight: 600;
+     }
+
+     .aboutUsGroup p{
+          padding: 0;
+          margin: 0;
+     }
+
+     .aboutUsGroup::before{
+          content: "";
+          background-image: url(../img/merch3.jpg);
+          opacity: 40%;
+          position: absolute;
+          background-size: cover;
+          top: 0px;
+          right: 0px;
+          bottom: 0px;
+          left: 0px;
+     }
+
+
+
+
+
+
+
+}
