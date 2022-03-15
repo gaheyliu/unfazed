@@ -122,7 +122,7 @@
 				<h2 class="heading">Events</h2>
 				<section class="split">
 					<div class="showLeft">
-						<div class="eventVenue1 clearfix">
+						<div class="eventVenue1">
 							<img src="img/sasktel.jpg" alt="">
 						</div>
 						<h3>Feb 69th, 2022 | 07:30 PM CST</h3>
@@ -158,96 +158,104 @@
 			<section class="merch" id="merch">
 				<h2 class="heading">Merch</h2>
 				<section class="merch1stRow">
-					<div class="merchDiv">
-						<div class="imgWrap">
-							<img src="img/merch1.jpg" alt="">
+					<section class="merch1-2">
+						<div class="merchDiv">
+							<div class="imgWrap">
+								<img src="img/merch1.jpg" alt="">
+							</div>
+							<p>
+								Merch Placeholder Graphics
+							</p>
+							<span>
+								$65.00
+							</span>
 						</div>
-						<p>
-							Merch Placeholder Graphics
-						</p>
-						<span>
-							$65.00
-						</span>
-					</div>
-					<div class="merchDiv">
-						<div class="imgWrap">
-							<img src="img/merch2.jpg" alt="">
+						<div class="merchDiv">
+							<div class="imgWrap">
+								<img src="img/merch2.jpg" alt="">
+							</div>
+							<p>
+								Merch Placeholder Graphics
+							</p>
+							<span>
+								$65.00
+							</span>
 						</div>
-						<p>
-							Merch Placeholder Graphics
-						</p>
-						<span>
-							$65.00
-						</span>
-					</div>
-					<div class="merchDiv">
-						<div class="imgWrap">
-							<img src="img/merch3.jpg" alt="">
+					</section>
+					<section class="merch3-4">
+						<div class="merchDiv">
+							<div class="imgWrap">
+								<img src="img/merch3.jpg" alt="">
+							</div>
+							<p>
+								Merch Placeholder Graphics
+							</p>
+							<span>
+								$65.00
+							</span>
 						</div>
-						<p>
-							Merch Placeholder Graphics
-						</p>
-						<span>
-							$65.00
-						</span>
-					</div>
-					<div class="merchDiv">
-						<div class="imgWrap">
-							<img src="img/merch4.jpg" alt="">
+						<div class="merchDiv">
+							<div class="imgWrap">
+								<img src="img/merch4.jpg" alt="">
+							</div>
+							<p>
+								Merch Placeholder Graphics
+							</p>
+							<span>
+								$65.00
+							</span>
 						</div>
-						<p>
-							Merch Placeholder Graphics
-						</p>
-						<span>
-							$65.00
-						</span>
-					</div>
+					</section>
 				</section>
 				<section class="merch2ndRow">
-					<div class="merchDiv">
-						<div class="imgWrap">
-							<img src="img/merch5.jpg" alt="">
+					<section class="merch5-6">
+						<div class="merchDiv">
+							<div class="imgWrap">
+								<img src="img/merch5.jpg" alt="">
+							</div>
+							<p>
+								Merch Placeholder Graphics
+							</p>
+							<span>
+								$65.00
+							</span>
 						</div>
-						<p>
-							Merch Placeholder Graphics
-						</p>
-						<span>
-							$65.00
-						</span>
-					</div>
-					<div class="merchDiv">
-						<div class="imgWrap">
-							<img src="img/merch6.jpg" alt="">
+						<div class="merchDiv">
+							<div class="imgWrap">
+								<img src="img/merch6.jpg" alt="">
+							</div>
+							<p>
+								Merch Placeholder Graphics
+							</p>
+							<span>
+								$65.00
+							</span>
 						</div>
-						<p>
-							Merch Placeholder Graphics
-						</p>
-						<span>
-							$65.00
-						</span>
-					</div>
-					<div class="merchDiv">
-						<div class="imgWrap">
-							<img src="img/merch7.jpg" alt="">
+					</section>
+					<section class="merch7-8">
+						<div class="merchDiv">
+							<div class="imgWrap">
+								<img src="img/merch7.jpg" alt="">
+							</div>
+							<p>
+								Merch Placeholder Graphics
+							</p>
+							<span>
+								$65.00
+							</span>
 						</div>
-						<p>
-							Merch Placeholder Graphics
-						</p>
-						<span>
-							$65.00
-						</span>
-					</div>
-					<div class="merchDiv">
-						<div class="imgWrap">
-							<img src="img/merch8.jpg" alt="">
+						<div class="merchDiv">
+							<div class="imgWrap">
+								<img src="img/merch8.jpg" alt="">
+							</div>
+							<p>
+								Merch Placeholder Graphics
+							</p>
+							<span>
+								$65.00
+							</span>
 						</div>
-						<p>
-							Merch Placeholder Graphics
-						</p>
-						<span>
-							$65.00
-						</span>
-					</div>
+					</section>
 				</section>
 
 			</section>
@@ -299,5 +307,55 @@
 	<div class="button-borders">
 		<button class="primary-button"> Add to cart
 		</button>
-	 </div>
--->
+	 </div> -->
+
+
+
+<!-- PAYPAL BUTTON -->
+
+<!-- <div id="smart-button-container" class="desktop-paypal">
+	<div style="text-align: center;">
+	  <div id="paypal-button-container"></div>
+	</div>
+  </div>
+<script src="https://www.paypal.com/sdk/js?client-id=sb&enable-funding=venmo&currency=CAD" data-sdk-integration-source="button-factory"></script>
+<script>
+  function initPayPalButton() {
+	paypal.Buttons({
+	  style: {
+		shape: 'pill',
+		color: 'gold',
+		layout: 'vertical',
+		label: 'paypal',
+		
+	  },
+
+	  createOrder: function(data, actions) {
+		return actions.order.create({
+		  purchase_units: [{"description":"Place Holder","amount":{"currency_code":"CAD","value":60}}]
+		});
+	  },
+
+	  onApprove: function(data, actions) {
+		return actions.order.capture().then(function(orderData) {
+		  
+		  // Full available details
+		  console.log('Capture result', orderData, JSON.stringify(orderData, null, 2));
+
+		  // Show a success message within this page, e.g.
+		  const element = document.getElementById('paypal-button-container');
+		  element.innerHTML = '';
+		  element.innerHTML = '<h3>Thank you for your payment!</h3>';
+
+		  // Or go to another URL:  actions.redirect('thank_you.html');
+		  
+		});
+	  },
+
+	  onError: function(err) {
+		console.log(err);
+	  }
+	}).render('#paypal-button-container');
+  }
+  initPayPalButton();
+</script> -->
