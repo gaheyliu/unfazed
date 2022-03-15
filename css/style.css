@@ -587,8 +587,8 @@ iframe{
      margin: 5% 0 5% 0;
      justify-content: space-evenly;
 }
-/* 
-.split div{
+
+/* .split div{
      display: flex;
      flex-direction: column;
      height: 30vh;
@@ -616,14 +616,14 @@ iframe{
 }
 
 .eventVenue1, .eventVenue2{
-     width: 30vw;
-     height: 30vh;
      display: flex;
      justify-content: center;
+     align-items: center;
 }
 .shows img{
      max-height: 100%;
 }
+
 
 
 /******************************************
@@ -635,15 +635,19 @@ iframe{
      background-color: #ede0d4;
      flex-wrap: wrap;
      justify-content: center;
-     height: 150vh;
 }
 
 .merch h2{
-padding-top: 2%;
+     padding-block: 2%;
 }
 
 .merch p{
      padding-inline:  10%;
+     padding-block: 5%;
+}
+
+.merch span{
+     padding: 0 0 5% 0;
 }
 
 .merch img{
@@ -661,7 +665,6 @@ padding-top: 2%;
      flex-direction: row;
      justify-content: space-around;
      width: 100%;
-     height: 50vh;
      /* padding-inline: 2.5%; */
 }
 
@@ -670,21 +673,18 @@ padding-top: 2%;
      flex-direction: row;
      justify-content: space-around;
      width: 100%;
-     height: 50vh;
      /* padding-inline: 2.5%; */
 }
 
-<<<<<<< Updated upstream
-=======
 .merch1-2, .merch3-4, .merch5-6, .merch7-8{
      width: 50%;
      display: flex;
      flex-direction: row;
+     justify-content: space-around;
 }
 
->>>>>>> Stashed changes
 .merchDiv{
-     width: 50%;
+     width: 20%;
      display: flex;
      flex-direction: column;
      align-items: center;
@@ -1072,15 +1072,10 @@ textarea {
 /********* Queries *********/
 /***************************/
 
-<<<<<<< Updated upstream
-@media screen and (max-device-width: 480px) { 
-     header {
-=======
 @media screen and (max-device-width: 480px) {
      
      
      /* header {
->>>>>>> Stashed changes
           display: none;
      } */
 
@@ -1088,17 +1083,25 @@ textarea {
           font-size: 4rem !important; 
      }
 
-     h3, h2{
+     h2, h3{
           font-size: 2.5rem !important;
      }
 
      p{
-          font-size: 0.85rem !important;
+          color: white !important;
+          font-size: 2rem !important;
+          text-shadow:
+              0.07em 0 black,
+              0 0.07em black,
+              -0.07em 0 black,
+              0 -0.07em black;
+          line-height: 0.88rem;
+          font-weight: 600;
      }
 
 
      .topsection, .newReleases{
-          height: 50vh;
+          height: 40vh;
      }
 
      .aboutUsGroup img{
@@ -1109,23 +1112,10 @@ textarea {
           position: relative;
      }
 
-     div.aboutUsGroup h2{
+     .aboutUsGroup h2, .aboutUsGroup p{
           position: relative;
-<<<<<<< Updated upstream
-          font-weight: 600;
      }
 
-     .aboutUsGroup p{
-          padding: 0;
-          margin: 0;
-=======
-          font-size: 5rem !important;
-     }
-
-     div.aboutUsGroup p{
-          position: relative;
-          font-size: 1.2rem !important;
-     }
 
 
      /* .aboutUsGroup p{
@@ -1142,7 +1132,6 @@ textarea {
 
      .aboutUsGroup p + p{
           padding-bottom: 5%;
->>>>>>> Stashed changes
      }
 
      .aboutUsGroup::before{
@@ -1157,25 +1146,39 @@ textarea {
           left: 0px;
      }
 
+     .split{
+          flex-direction: column;
+     }
 
+     .showLeft, .showRight{
+          width: 100vw;
+     }
+     
 
+     .split img{
+          max-height: 100%;
+          justify-content: center;
+     }
 
-<<<<<<< Updated upstream
-
-=======
      .eventVenue1, .eventVenue2{
           justify-content: space-around;
           align-items: center;
      }
 
+
      .merch p{
           font-size: 1.5rem;
-          line-height: 2rem;
      }
 
+     section.merch{
+          flex-direction: row !important;
+     }
 
-     section.merch1stRow, section.merch2ndRow{
-          flex-direction: column;;
+     section.merch section.merch1stRow,
+     section.merch section.merch2ndRow
+     {
+          width: 100%;
+          flex-direction: column;
      }
 
      section.merch section.merch1stRow section.merch1-2,
@@ -1187,16 +1190,13 @@ textarea {
           width: 100%;
      }
 
-     .merchDiv{
-          width: 50%;
+     section.merch img{
+          max-width: 40vw;
      }
 
-     .merchDiv img{
-          max-width: 400px;
+     section.merch p{
+          line-height: 2rem;
      }
-
-
->>>>>>> Stashed changes
 
 
 }
