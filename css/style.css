@@ -674,8 +674,17 @@ padding-top: 2%;
      /* padding-inline: 2.5%; */
 }
 
+<<<<<<< Updated upstream
+=======
+.merch1-2, .merch3-4, .merch5-6, .merch7-8{
+     width: 50%;
+     display: flex;
+     flex-direction: row;
+}
+
+>>>>>>> Stashed changes
 .merchDiv{
-     width: 20%;
+     width: 50%;
      display: flex;
      flex-direction: column;
      align-items: center;
@@ -1063,10 +1072,17 @@ textarea {
 /********* Queries *********/
 /***************************/
 
+<<<<<<< Updated upstream
 @media screen and (max-device-width: 480px) { 
      header {
+=======
+@media screen and (max-device-width: 480px) {
+     
+     
+     /* header {
+>>>>>>> Stashed changes
           display: none;
-     }
+     } */
 
      h1{
           font-size: 4rem !important; 
@@ -1093,14 +1109,40 @@ textarea {
           position: relative;
      }
 
-     .aboutUsGroup h2, .aboutUsGroup p{
+     div.aboutUsGroup h2{
           position: relative;
+<<<<<<< Updated upstream
           font-weight: 600;
      }
 
      .aboutUsGroup p{
           padding: 0;
           margin: 0;
+=======
+          font-size: 5rem !important;
+     }
+
+     div.aboutUsGroup p{
+          position: relative;
+          font-size: 1.2rem !important;
+     }
+
+
+     /* .aboutUsGroup p{
+               color: white;
+               font-size: 20px;
+               text-shadow:
+                   0.07em 0 black,
+                   0 0.07em black,
+                   -0.07em 0 black,
+                   0 -0.07em black;
+               line-height: 0.88rem;
+               font-weight: 600;
+     } */
+
+     .aboutUsGroup p + p{
+          padding-bottom: 5%;
+>>>>>>> Stashed changes
      }
 
      .aboutUsGroup::before{
@@ -1118,7 +1160,43 @@ textarea {
 
 
 
+<<<<<<< Updated upstream
 
+=======
+     .eventVenue1, .eventVenue2{
+          justify-content: space-around;
+          align-items: center;
+     }
+
+     .merch p{
+          font-size: 1.5rem;
+          line-height: 2rem;
+     }
+
+
+     section.merch1stRow, section.merch2ndRow{
+          flex-direction: column;;
+     }
+
+     section.merch section.merch1stRow section.merch1-2,
+     section.merch section.merch1stRow section.merch3-4,
+     section.merch section.merch2ndRow section.merch5-6,
+     section.merch section.merch2ndRow section.merch7-8
+     {
+          display: flex;
+          width: 100%;
+     }
+
+     .merchDiv{
+          width: 50%;
+     }
+
+     .merchDiv img{
+          max-width: 400px;
+     }
+
+
+>>>>>>> Stashed changes
 
 
 }
