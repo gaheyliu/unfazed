@@ -678,6 +678,9 @@ iframe{
 
 .merch1-2, .merch3-4, .merch5-6, .merch7-8{
      width: 50%;
+     display: flex;
+     flex-direction: row;
+     justify-content: space-around;
 }
 
 .merchDiv{
@@ -1072,9 +1075,9 @@ textarea {
 @media screen and (max-device-width: 480px) {
      
      
-     header {
+     /* header {
           display: none;
-     }
+     } */
 
      h1{
           font-size: 4rem !important; 
@@ -1162,26 +1165,38 @@ textarea {
           align-items: center;
      }
 
-     .merch{
-
-     }
 
      .merch p{
           font-size: 1.5rem;
      }
-/* 
+
      section.merch{
           flex-direction: row !important;
      }
 
+     section.merch section.merch1stRow,
+     section.merch section.merch2ndRow
+     {
+          width: 100%;
+          flex-direction: column;
+     }
+
      section.merch section.merch1stRow section.merch1-2,
      section.merch section.merch1stRow section.merch3-4,
-     section.merch section.merch1stRow section.merch5-6,
-     section.merch section.merch1stRow section.merch7-8
+     section.merch section.merch2ndRow section.merch5-6,
+     section.merch section.merch2ndRow section.merch7-8
      {
           display: flex;
           width: 100%;
-     } */
+     }
+
+     section.merch img{
+          max-width: 40vw;
+     }
+
+     section.merch p{
+          line-height: 2rem;
+     }
 
 
 }
