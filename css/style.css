@@ -45,7 +45,7 @@
      font-style: normal;
  }
 
- @font-face {   /* HTML MUST BE LOWER CASE*/
+ @font-face {   /* HTML TEXT MUST BE LOWER CASE*/
      font-family: 'greenday';
      src: url('../assets/fonts/GreenDay/break-down.ttf') format('opentype');
      font-weight: normal;
